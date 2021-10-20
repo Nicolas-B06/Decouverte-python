@@ -1,6 +1,6 @@
 import sqlite3
 
-connection = sqlite3.connect("Sqllite_database")
+connection = sqlite3.connect("api_data.db")
 
 cursor = connection.cursor()
 
