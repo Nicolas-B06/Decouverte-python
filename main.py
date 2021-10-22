@@ -3,13 +3,14 @@ import sqlite3
 from datetime import datetime
 from sqlite3.dbapi2 import Cursor
 from fastapi import FastAPI, HTTPException
+#Serveur web
 import uvicorn
 
 from models.Article import OutArticle, InArticle
 from models.Comment import OutComment, InComment
 
 app = FastAPI(title="Mon premier blog")
-
+# connection à la bdd
 connection = sqlite3.connect('api_data.db')
 
 
